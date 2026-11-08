@@ -1,0 +1,39 @@
+.tech-text {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.hero h1 .headline-line {
+  display: block;
+  position: relative;
+  height: .94em;
+  color: inherit;
+}
+
+.hero h1 .headline-accent {
+  color: var(--orange);
+}
+
+.hero h1 .headline-fallback {
+  color: inherit;
+}
+
+.headline-line > .tech-text {
+  position: absolute;
+  inset: 0;
+  color: inherit;
+}
+
+.headline-line:has(.tech-text[data-ready]) > .headline-fallback {
+  visibility: hidden;
+}
+
+.tech-text-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
