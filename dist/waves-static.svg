@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+<pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="2.6" fill="white"/></pattern>
+<mask id="screen"><rect width="1440" height="900" fill="url(#dots)"/></mask>
+<filter id="soft" x="-20%" width="140%"><feGaussianBlur stdDeviation="23"/></filter>
+<path id="fold" d="M-170-170C140 170 42 390 312 516S510 767 674 1060" fill="none"/>
+</defs><rect width="1440" height="900" fill="#121116"/>
+<g mask="url(#screen)" stroke="#aaa5b7"><g opacity=".19" stroke-width="105" filter="url(#soft)"><use href="#fold"/><use href="#fold" x="435"/><use href="#fold" x="840"/></g><g opacity=".13" stroke-width="16"><use href="#fold"/><use href="#fold" x="435"/><use href="#fold" x="840"/></g></g></svg>
