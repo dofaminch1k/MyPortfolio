@@ -55,7 +55,7 @@ function App(){
               <span className="headline-fallback">{line}</span>
               <TechText text={line} fontSize={0} letterSpacing={-0.065} align="left"
                 accentColor="#ff7038" reach={100} labels={false} draggable={false}
-                clickKick={false} />
+                clickKick={false} sweep={false} selection={false} specks={0} reveal="area" />
             </span>
           ))}
         </h1>
